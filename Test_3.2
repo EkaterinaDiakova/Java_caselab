@@ -1,0 +1,14 @@
+public class Main {
+    public static void main(String[] args) {
+
+  		System.out.print("Enter the string->\n");
+  		Scanner scan = new Scanner(System.in);
+  		
+  		String my_str = scan.nextLine();
+  		
+  		my_str = my_str.replaceAll("\\W","");
+  		System.out.print(my_str);
+  		StringBuilder new_str = new StringBuilder(my_str);
+  		new_str.reverse();
+  		System.out.println("\n" + my_str.equalsIgnoreCase(new_str.toString()));
+	}
