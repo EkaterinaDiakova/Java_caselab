@@ -1,0 +1,3 @@
+SELECT surname 
+FROM (SELECT experience,  surname FROM Customers ORDER BY experience DESC LIMIT 2) AS tmp ORDER BY experience LIMIT 1;
+/* Необходимо составить SQL-запрос, который вернет фамилию сотрудника со вторым максимальным опытом работы */ 
